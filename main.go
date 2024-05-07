@@ -9,9 +9,9 @@ import (
 	_ "github.com/mattn/go-sqlite3"
 )
 
-var db, err = sql.Open("sqlite3", "employees.db")
+// var db, err = sql.Open("sqlite3", "employees.db")
 
-// var db, err = sql.Open("sqlite3", "file::memory:?cache=shared")
+var db, err = sql.Open("sqlite3", "file::memory:?cache=shared")
 
 func main() {
 	if err != nil {
